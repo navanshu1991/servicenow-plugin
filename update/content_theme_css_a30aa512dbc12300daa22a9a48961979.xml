@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_theme_css">
+    <content_theme_css action="INSERT_OR_UPDATE">
+        <content_css display_value="acesancss">dd982152db852300daa22a9a48961957</content_css>
+        <content_theme display_value="ACETHEME">4bb565dedb452300daa22a9a489619f5</content_theme>
+        <order/>
+        <sys_class_name>content_theme_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 19:08:47</sys_created_on>
+        <sys_id>a30aa512dbc12300daa22a9a48961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acesancss.ACETHEME</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>content_theme_css_a30aa512dbc12300daa22a9a48961979</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 19:08:47</sys_updated_on>
+    </content_theme_css>
+</record_update>

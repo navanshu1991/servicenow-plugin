@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description/>
+        <name>MediumREST</name>
+        <oauth2_profile display_value="Kingfisher Token default_profile">57113fb6db5f330089f7fbef2996195b</oauth2_profile>
+        <protocol_name/>
+        <rest_endpoint>https://dev.mps.api.hp.com/caseexchange/createCase</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-08 07:42:07</sys_created_on>
+        <sys_id>5d3e2381db856300daa22a9a4896192e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>MediumREST</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>sys_rest_message_5d3e2381db856300daa22a9a4896192e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-20 10:49:07</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

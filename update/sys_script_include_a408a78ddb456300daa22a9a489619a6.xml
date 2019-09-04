@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_266926_sample_sa.IncidentRestAPIInterface</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>IncidentRestAPIInterface</name>
+        <script><![CDATA[var IncidentRestAPIInterface = Class.create();
+IncidentRestAPIInterface.prototype = {
+  initialize: function() {
+  this.baseurl = "https://dev.mps.api.hp.com/caseexchange/createCase";
+  this.jsonConverter = new x_266926_sample_sa.MediumJSONConverter();
+},
+addRestInfo: function(method, incidentNumber){
+   info = this.jsonConverter.incidentToJSON(incidentNumber);  
+   this.endPointREST('x_266926_sample_sa.MediumREST', info, incidentNumber, method);
+ },
+endPointREST: function(RESTEndpoint, info, sysId, methodRest){
+  var r =  new sn_ws.RESTMessageV2(RESTEndpoint, methodRest);
+  r.setStringParameter('baseurl', this.baseurl); 
+  r.setStringParameter('incident', sysId);
+  r.setXMLParameter('events', info);
+  var response = r.execute();
+},
+    type: 'IncidentRestAPIInterface'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-08 07:22:13</sys_created_on>
+        <sys_id>a408a78ddb456300daa22a9a489619a6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>IncidentRestAPIInterface</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy>protected</sys_policy>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>sys_script_include_a408a78ddb456300daa22a9a489619a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-20 09:14:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

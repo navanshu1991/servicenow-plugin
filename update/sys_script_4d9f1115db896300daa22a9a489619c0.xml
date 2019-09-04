@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_266926_sample_sa_incident_copier</collection>
+        <condition>current.assignment_group == "947b77dcdb03330084258a18489619bd"</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Postmessage</name>
+        <order>500</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+       try {
+               var rinc = {};
+		       rinc.requesterId = ""+current.number;
+               rinc.title = ""+current.short_description;
+               rinc.problemDescription = ""+current.description;
+		       rinc.serialNumber = "VNB3R73260";
+		       rinc.firstName = ""+current.opened_by.first_name;
+		       rinc.lastName = ""+current.opened_by.last_name;
+		       rinc.companyAddress1 = "Test address 1";
+		       rinc.companyName = "ACE Service Now";
+		       rinc.city = "Pleasanton";
+               rinc.state = "CA";
+               rinc.postalCode = "94588";
+               rinc.country = "US";
+               rinc.contactPhone = "1212121245";
+			   rinc.contactEmail = "sanjeev.babu@hp.com";
+			   rinc.severity = "3";
+			   rinc.priority = "3";
+		   if (current.sys_updated_by != "itil"){
+			   var mainObj = {};
+               mainObj.createCaseRequest = rinc;
+               var body = JSON.stringify(mainObj);
+               var r = new sn_ws.RESTMessageV2('MediumREST', 'post');
+               r.setRequestBody(body);
+               var response = r.execute();
+               var responseBody = response.getBody();
+               var httpStatus = response.getStatusCode();
+               gs.addInfoMessage("HERE");
+               gs.log(responseBody);
+       }}
+       catch(ex) {
+               var message = ex.getMessage();
+       }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-08 15:56:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4d9f1115db896300daa22a9a489619c0</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_name>Postmessage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>sys_script_4d9f1115db896300daa22a9a489619c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-21 05:40:55</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d9f1115db896300daa22a9a489619c0"/>
+</record_update>

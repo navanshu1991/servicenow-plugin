@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_method_name" label="method name" language="en" table="x_266926_sample_sa_hp_inbound">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_method_name</element>
+            <help/>
+            <hint/>
+            <label>method name</label>
+            <language>en</language>
+            <name>x_266926_sample_sa_hp_inbound</name>
+            <plural>method names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-31 06:30:39</sys_created_on>
+            <sys_id>c5667b98db03330084258a1848961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>method name</sys_name>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+            <sys_update_name>sys_documentation_x_266926_sample_sa_hp_inbound_u_method_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-31 06:30:39</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_266926_sample_sa.MediumJSONConverter</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MediumJSONConverter</name>
+        <script><![CDATA[var MediumJSONConverter = Class.create();
+MediumJSONConverter.prototype = {
+incidentToJSON: function(incidentNumber) {
+  if (JSUtil.nil(incidentNumber)) return;
+  var gr = new GlideRecord("incident");   
+  gr.addQuery('number', incidentNumber);
+  gr.query();
+  if (gr.next()) {    
+   return this.incidentGRToJSON(gr);
+  }
+  return null;
+ },
+    
+ incidentGRToJSON: function(pGR) {
+  var gr = pGR;  
+  var lObj  = new Object(); 
+   lObj.title = gr.short_description.getDisplayValue();
+  lObj.number = gr.number.getDisplayValue();
+  lObj.shortDescription = gr.short_description.getDisplayValue();
+  return new JSON().encode(lObj);   
+ },
+    type: 'MediumJSONConverter'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-08 07:32:15</sys_created_on>
+        <sys_id>7bdb278ddb456300daa22a9a4896197a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>MediumJSONConverter</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy>protected</sys_policy>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>sys_script_include_7bdb278ddb456300daa22a9a4896197a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-09 05:58:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

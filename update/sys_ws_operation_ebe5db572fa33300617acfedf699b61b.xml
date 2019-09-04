@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>update</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var updateRequest = JSON.parse(request.body.dataString);
+	var hdrs = {};
+	var responseBodySuccess = {
+			statusCode: 200,
+			message: 'Task updated successfully'
+		};
+	var responseBodyFailure = {
+			statusCode: 400,
+			message: 'Mandatory items not passed in the request'
+		};
+	
+	if(updateRequest.requesterId && updateRequest.providerId){
+	
+		var table = 'x_266926_sample_sa_incident_copier';
+		var gr = new GlideRecord(table);
+
+		hdrs['Content-Type'] = 'application/json';
+		
+		response.setHeaders(hdrs);
+
+		gr.addQuery('number', updateRequest.requesterId);
+		gr.query();
+		while(gr.next()){
+			if(request.pathParams.requestType === 'update'){
+				response.setStatus(200);
+				gr.correlation_id = updateRequest.providerId;
+				gr.work_notes = updateRequest.notes;
+				gr.update();
+				response.setBody(responseBodySuccess);
+			}
+			else if(request.pathParams.requestType === 'close'){
+				response.setStatus(200);
+				gr.state = 3;
+				gr.update();
+				response.setBody(responseBodySuccess);
+			}
+			else{
+				response.setStatus(400);
+				response.setBody(responseBodyFailure);
+			}
+		}
+	}
+	else{
+		hdrs['Content-Type'] = 'application/json';
+		response.setStatus(400);
+		response.setBody(responseBodyFailure);
+	}
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_266926_sample_sa/ace_snow_inbound/{requestType}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/{requestType}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-03 08:22:14</sys_created_on>
+        <sys_id>ebe5db572fa33300617acfedf699b61b</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>update</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>sys_ws_operation_ebe5db572fa33300617acfedf699b61b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-04 09:27:02</sys_updated_on>
+        <web_service_definition display_value="Ace Snow Inbound">09d55b572fa33300617acfedf699b6aa</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

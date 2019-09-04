@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_theme">
+    <content_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>ACETHEME</name>
+        <sys_class_name>content_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 18:50:02</sys_created_on>
+        <sys_id>4bb565dedb452300daa22a9a489619f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ACETHEME</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>content_theme_4bb565dedb452300daa22a9a489619f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 18:53:31</sys_updated_on>
+    </content_theme>
+</record_update>

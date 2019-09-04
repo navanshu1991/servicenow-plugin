@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c9cac8dadb812300daa22a9a489619c0" sys_domain="global" table="x_266926_sample_sa_incident_copier" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-10-11 12:12:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9dca0cdadb812300daa22a9a489619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_266926_sample_sa_incident_copier" name="x_266926_sample_sa_incident_copier" sys_domain="global" view="Default view">c9cac8dadb812300daa22a9a489619c0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_266926_sample_sa_incident_copier" sys_domain="global" view="Default view">558d52a4db412300daa22a9a48961912</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-10-11 12:12:19</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-10-11 12:12:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>99ca0cdadb812300daa22a9a489619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_266926_sample_sa_incident_copier" name="x_266926_sample_sa_incident_copier" sys_domain="global" view="Default view">c9cac8dadb812300daa22a9a489619c0</sys_ui_form>
+            <sys_ui_section caption="HP Work Notes" display_value="HP Work Notes" name="x_266926_sample_sa_incident_copier" sys_domain="global" view="Default view">85cac8dadb812300daa22a9a489619bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-10-11 12:12:19</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_266926_sample_sa_incident_copier</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-10-11 12:12:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9cac8dadb812300daa22a9a489619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_266926_sample_sa_incident_copier</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c9cac8dadb812300daa22a9a489619c0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-10-11 12:12:19</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

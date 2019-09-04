@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>homepages</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_266926_sample_sa_Welcome To HP VIVA.do</endpoint>
+        <html><![CDATA[<!-- Contains the HTML and CSS necessary for all styling and layout. Feel free to modify if need be. -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<style type="text/css">
+    .homepage-quicklinks {
+        background-color: #ffffff;
+        font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+    }
+    .text-info {
+        color: #31708f;
+    }
+    a.text-info:hover, a.text-info:focus {
+        color: #245269;
+    }
+    .text-success {
+        color: #5cb85c;
+    }
+    a.text-success:hover, a.text-success:focus {
+        color: #449d44;
+    }
+    .text-warning {
+        color: #f0ad4e;
+    }
+    a.text-warning:hover, a.text-warning:focus {
+        color: #ec971f;
+    }
+    .text-danger {
+        color: #d9534f;
+    }
+    a.text-danger:hover, a.text-danger:focus {
+        color: #c9302c;
+    }
+    .text-muted {
+        color: #979797;
+    }
+    a.circle_icon {
+        display: block;
+        padding: 20px 0px 20px 70px;
+        position: relative;
+    }
+    a.circle_icon .fa {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+    }
+    a.circle_icon h3 {
+        font-weight: 300 !important;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+</style>
+
+<div class="hp_logo"><a class="hf_logo link_metrics" name="1414644" href="http://www8.hp.com/us/en/home.html" title="HP® Official Site | Laptops, Computers, Desktops , Printers, and more" tabindex="2"><img src="https://www8.hp.com/us/en/images/i/hpi/header-footer/caas-hf-v3.2/hpi-hp-logo-pr.gif" alt="HP® Official Site   | Laptops, Computers, Desktops , Printers, and more" class="hf_printable" aria-hidden="true"/></a></div>
+<h1 style="color:#717171;font-size:4em;text-align:center">Welcome to HP VIVA!</h1>
+<h2 style="color:#717171;font-size:2em;text-align:center">Simplified HP Case exchange</h2>
+
+
+
+
+
+
+<div class="homepage-quicklinks" style="background-size: initial; background-position: center center;">
+    <div>
+        <div class="row">            
+            <div class="col-sm-6 col-md-3">
+                <span>
+                    <div>
+                        <div>
+                            <a class="circle_icon  text-success" target="" href="https://dev69249.service-now.com/$studio.do">
+                                <span class="fa fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                                </span> 
+                                <h3>Browse, configure and customize the application</h3>
+                                <span class="text-muted">Browse and Configure VIVA</span> 
+                            </a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+			<div class="col-sm-6 col-md-3">
+                <span>
+                    <div>
+                        <div>
+                            <a class="circle_icon  text-info" target="" href="nav_to.do?uri=%2Fx_266926_sample_sa_incident_copier.do%3Fsys_id%3D-1%26sysparm_stack%3Dx_266926_sample_sa_incident_copier_list.do">
+                                <span class="fa fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-ticket fa-stack-1x fa-inverse"></i>
+                                </span> 
+                                <h3>Submit Case to HP from ServiceNow</h3>
+                                <span class="text-muted">Submit Incident Ticket to HP</span> 
+                            </a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <span>
+                    <div>
+                        <div>
+                            <a class="circle_icon  text-warning" target="" href="com.glideapp.studio.do?sysparm_transaction_scope=23684a64db012300daa22a9a48961939">
+                                <span class="fa fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                                </span> 
+                                <h3>Report an Issue</h3>
+                                <span class="text-muted">Contact support to report a problem</span> 
+                            </a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <span>
+                    <div>
+                        <div>
+                            <a class="circle_icon  text-danger" target="" href="#" onclick="popupOpenStandard('$chat_support.do?queueID=63470d1e6fbe460055b51665bd3ee421')">
+                                <span class="fa fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
+                                </span> 
+                                <h3>Live Chat</h3>
+                                <span class="text-muted">Start a chat conversation with customer service agents</span> 
+                            </a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>]]></html>
+        <name>Welcome To HP VIVA</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-12 01:49:32</sys_created_on>
+        <sys_id>8e640f16db492300daa22a9a4896191e</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Welcome To HP VIVA</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>sys_ui_page_8e640f16db492300daa22a9a4896191e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-22 15:55:18</sys_updated_on>
+    </sys_ui_page>
+</record_update>

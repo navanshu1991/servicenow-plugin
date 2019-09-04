@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>acesancss</name>
+        <style>// colors&#13;
+$bg-color: linear-gradient(to bottom, #1d3461, #0b1d30);&#13;
+$circle-color: #ff0017;&#13;
+$logo-color: #fff;&#13;
+&#13;
+// mixins&#13;
+@mixin center {&#13;
+    position: absolute;&#13;
+    top: 0;&#13;
+    right: 0;&#13;
+    bottom: 0;&#13;
+    left: 0;&#13;
+    margin: auto;&#13;
+}&#13;
+&#13;
+@mixin pseudo($position: absolute, $content: "") {&#13;
+    content: $content;&#13;
+    position: $position;&#13;
+}&#13;
+&#13;
+html, body{&#13;
+  width: 100%;&#13;
+  height: 100%;&#13;
+}&#13;
+&#13;
+body{&#13;
+  background: $bg-color;&#13;
+  overflow: hidden;&#13;
+}&#13;
+&#13;
+.logo{&#13;
+  @include center;&#13;
+  width: 65vmin;&#13;
+  height: 65vmin;&#13;
+  border-radius: 50%;&#13;
+  background: $circle-color;&#13;
+  filter: drop-shadow(0 0 5vmin $circle-color);&#13;
+&#13;
+  .circle{&#13;
+    @include center;&#13;
+    width: 46.4vmin;&#13;
+    height: 46.4vmin;&#13;
+    border-radius: 50%;&#13;
+    background: $circle-color;&#13;
+    border: 4.5vmin solid $logo-color;&#13;
+&#13;
+    .a-shape{&#13;
+      .left-shape{&#13;
+        @include center;&#13;
+        z-index: 2;&#13;
+        top: -8vmin;&#13;
+        left: -14.3vmin;&#13;
+        width: 6.6vmin;&#13;
+        height: 71.6vmin;&#13;
+        background: $logo-color;&#13;
+        transform: rotate(26deg) skewY(-25deg);&#13;
+&#13;
+        &amp;:before{&#13;
+          @include pseudo;&#13;
+          left: -1.6vmin;&#13;
+          top: 6.5vmin;&#13;
+          width: 1.6vmin;&#13;
+          height: 55vmin;&#13;
+          background: $circle-color;&#13;
+        }&#13;
+&#13;
+        &amp;:after{&#13;
+          @include pseudo;&#13;
+          left: 4.45vmin;&#13;
+          width: 3.5vmin;&#13;
+          height: 71.6vmin;&#13;
+          background: $logo-color;&#13;
+          transform: rotate(-2.9deg) skewY(3deg);&#13;
+        }&#13;
+      }&#13;
+&#13;
+      .left-shape-line{&#13;
+        @include center;&#13;
+        z-index: 1;&#13;
+        bottom: -43vmin;&#13;
+        left: -24.5vmin;&#13;
+        width: 1.7vmin;&#13;
+        height: 10vmin;&#13;
+        background: $circle-color;&#13;
+        transform: rotate(23deg);&#13;
+      }&#13;
+&#13;
+      .center-shape{&#13;
+        @include center;&#13;
+        z-index: 1;&#13;
+        top: 10.75vmin;&#13;
+        width: 20vmin;&#13;
+        height: 8.15vmin;&#13;
+        background: $logo-color;&#13;
+&#13;
+        &amp;:before{&#13;
+          @include pseudo;&#13;
+          top: -1.3vmin;&#13;
+          left: 10vmin;&#13;
+          width: 20vmin;&#13;
+          height: 1.7vmin;&#13;
+          background: $circle-color;&#13;
+          transform: rotate(43deg);&#13;
+        }&#13;
+&#13;
+        &amp;:after{&#13;
+          @include pseudo;&#13;
+          top: 8.4vmin;&#13;
+          left: 10vmin;&#13;
+          width: 20vmin;&#13;
+          height: 1.7vmin;&#13;
+          background: $circle-color;&#13;
+          transform: rotate(-38deg);&#13;
+        }&#13;
+      }&#13;
+&#13;
+      .center-shape-right{&#13;
+        @include center;&#13;
+        z-index: 1;&#13;
+        top: 10.6vmin;&#13;
+        left: 19.75vmin;&#13;
+        width: 0;&#13;
+        height: 0;&#13;
+        border-top: 8.5vmin solid transparent;&#13;
+        border-bottom: 7vmin solid transparent;&#13;
+        border-left: 9.2vmin solid $logo-color;&#13;
+&#13;
+        &amp;:before{&#13;
+          @include pseudo;&#13;
+          width: 10vmin;&#13;
+        }&#13;
+      }&#13;
+&#13;
+      .right-shape{&#13;
+        @include center;&#13;
+        top: -20.35vmin;&#13;
+        left: 18.7vmin;&#13;
+        width: 8.1vmin;&#13;
+        height: 52vmin;&#13;
+        background: $logo-color;&#13;
+&#13;
+        &amp;:after{&#13;
+          @include pseudo;&#13;
+          top: 10vmin;&#13;
+          left: 8.1vmin;&#13;
+          width: 1.7vmin;&#13;
+          height: 10vmin;&#13;
+          background: $circle-color;&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}&#13;
+</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-11 19:05:50</sys_created_on>
+        <sys_id>dd982152db852300daa22a9a48961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acesancss</sys_name>
+        <sys_package display_value="SAMPLESANJEEVAPP1" source="x_266926_sample_sa">23684a64db012300daa22a9a48961939</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAMPLESANJEEVAPP1">23684a64db012300daa22a9a48961939</sys_scope>
+        <sys_update_name>content_css_dd982152db852300daa22a9a48961957</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-11 19:05:50</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>
